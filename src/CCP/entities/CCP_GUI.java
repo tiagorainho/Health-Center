@@ -28,19 +28,19 @@ public class CCP_GUI extends javax.swing.JFrame {
     }
     
     public int getMaxEVT(){
-        return Integer.parseInt((String) maxEVT.getSelectedItem());
+        return Integer.parseInt((String) maxEVT.getSelectedItem())+1;
     }
     
     public int getMaxPYT(){
-        return Integer.parseInt((String) maxPYT.getSelectedItem());
+        return Integer.parseInt((String) maxPYT.getSelectedItem())+1;
     }
 
     public int getMaxMDT(){
-        return Integer.parseInt((String) maxMDT.getSelectedItem());
+        return Integer.parseInt((String) maxMDT.getSelectedItem())+1;
     }
     
     public int getMaxTtm(){
-        return Integer.parseInt((String) maxTtm.getSelectedItem());
+        return Integer.parseInt((String) maxTtm.getSelectedItem())+1;
     }
     
    public int getNumSeats(){

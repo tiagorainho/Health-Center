@@ -74,7 +74,7 @@ public class TCallCenter<E> extends Thread implements INotification<E> {
                     this.newNotification.await();
                 
                 packet = this.priorityQueue.pop();
-                System.out.println("\n/////////////////"+packet.event+"///////////////////////\n");
+                // System.out.println("\n/////////////////"+packet.event+"///////////////////////\n");
 
                 if(packet.type == "signal")
                     if(packet.payload == null)

@@ -28,12 +28,6 @@ public class MWaiting extends MPriorityQueue<Patient>{
 
     public void seat(Patient patient, int priority) {
         this.put(patient, priority);
-        try {
-            Thread.sleep(200);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
         updateGUI();
     }
 
@@ -70,6 +64,7 @@ public class MWaiting extends MPriorityQueue<Patient>{
                 boxesGUI[i].setVisible(false);;
                 i++;
             }
+            // Thread.sleep(50);
         } catch ( Exception ex ) {}
         finally {
             this.GUIrl.unlock();

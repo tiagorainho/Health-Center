@@ -30,7 +30,7 @@ public class SingletonLogger {
         this.messagePosMap=new HashMap<String,int[]>();
         this.ageGroupMap=new HashMap<AgeGroup,String>();
         this.doSMap=new HashMap<DoS,String>();
-        String logFileName = "tiago/src/log.txt";
+        String logFileName = "./src/log.txt";
         try {
             this.log = new FileWriter(logFileName);
           } catch (IOException e) {

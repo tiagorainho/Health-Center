@@ -56,6 +56,8 @@ public class ETH implements IHall, IPlace {
 
     @Override
     public Patient leaves(Patient patient) {
+        return this.getPatientRoom(patient).leaves(patient);
+        /*
         int patientETN = patient.getETN();
 
         Patient children = this.childRoom.getHead();
@@ -67,6 +69,7 @@ public class ETH implements IHall, IPlace {
         else if(adult != null && patientETN == adult.getETN())
             p = this.adultRoom.leaves(patient);
         return p;
+        */
     }
 
     @Override

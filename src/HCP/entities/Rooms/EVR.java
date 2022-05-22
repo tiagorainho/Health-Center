@@ -53,12 +53,6 @@ public class EVR implements IRoom, IPlace {
     public void process(Patient patient) {
         this.nurse.evaluate(patient);
         this.seat.updateGUI();
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
         SingletonLogger.getInstance().logPatient(patient,"EVH",this.ID);
     }
     

@@ -48,9 +48,11 @@ public class TPatient extends Thread implements IPatient {
                 color = ANSI_YELLOW;
 
             //System.out.println(color + "Paciente " + this.patient.getID() + " ENTROU no hall " + hall.getClass().toString() + ANSI_RESET);
+            // System.out.println("Entrou: " + this.patient.getID());
             hall.enters(this.patient);
             hall.process(this.patient);
             hall.leaves(this.patient);
+            // System.out.println("Saiu: " + this.patient.getID());
             //System.out.println(color + "Paciente " + this.patient.getID() + " SAIU do hall " + hall.getClass().toString() + ANSI_RESET);
         }
         
